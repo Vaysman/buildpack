@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-RUN useradd -d /opt/jenkins -u 1000 jenkins &&
+RUN useradd -d /opt/jenkins -u 1000 jenkins &&\
     groupadd --gid 596 docker &&\
     usermod -a --groups docker jenkins
 
